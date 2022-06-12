@@ -63,9 +63,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent= new Intent(MainActivity.this,ShowActivity.class);
-                intent.putExtra("uitest",dataList.get(position));
+                intent.putExtra("cityname",dataList.get(position));
                 startActivity(intent);
-
             }
         });
 

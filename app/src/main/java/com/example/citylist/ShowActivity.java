@@ -15,7 +15,7 @@ public class ShowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show);
         Intent intent=getIntent();
-        String s=intent.getStringExtra("ui");
+        String s=intent.getStringExtra("cityname");
 
         TextView textView=findViewById(R.id.textView1);
         textView.setText(s);
